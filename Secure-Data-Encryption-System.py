@@ -59,7 +59,7 @@ def encrypt_text(text, key):
 # DECRYPT TEXT
 def decrypt_text(encrypted_text, key):
     try:
-        cipher = Fernet(generate_key,(key))
+        cipher = Fernet(generate_key(key))
         return cipher.decrypt(encrypted_text.encode()).decode()
     except:
         return None
