@@ -42,7 +42,7 @@ def save_data(data):
 # GENERATE KEY
 def generate_key(passkey):
     key = pbkdf2_hmac('sha256', passkey.encode(), SALT, 100000)  #hashing key
-    return urlsafe_b64dencode(key)
+    return urlsafe_b64encode(key)
 
 
 # HASH PASSWORD
