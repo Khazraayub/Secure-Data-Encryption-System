@@ -7,17 +7,6 @@ from cryptography.fernet import Fernet
 from base64 import urlsafe_b64encode
 from hashlib import pbkdf2_hmac
 
-# Custom CSS for styling
-st.markdown(
-    """
-    <style>
-        .stApp{
-            background: linear-gradient(135deg,rgb(195, 168, 231),rgb(238, 235, 198));
-        }
-    </style>
-    """, 
-    unsafe_allow_html=True
-)
 
 # DATA INFORMATION FROM USER
 DATA_FILE = "secure_data.json"
